@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="FC Barcelona"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/fcb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Goals"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/barGoals_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Shots on Goal"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/barSog_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/barOneGoal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#D50000"
+            android:onClick="plusOneGoalBar"
+            android:text="GOAL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/barOneSog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#D50000"
+            android:onClick="plusOneSogBar"
+            android:text="Shot on goal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/barResetAll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#D50000"
+            android:onClick="barReset"
+            android:text="Reset"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Real Madrid"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/rmd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Goals"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rmdGoals_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Shots on Goal"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rmdSog_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/rmdOneGoal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#FAFAFA"
+            android:onClick="plusOneGoalRmd"
+            android:text="GOAL"
+            android:textColor="#304FFE"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/rmdOneSog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#FAFAFA"
+            android:onClick="plusOneSogRmd"
+            android:text="Shot on goal"
+            android:textColor="#304FFE"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rmdResetAll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="12dp"
+            android:layout_weight="2"
+            android:background="#FAFAFA"
+            android:onClick="rmdReset"
+            android:text="Reset"
+            android:textColor="#304FFE" />
+    </LinearLayout>
+
+</LinearLayout>
